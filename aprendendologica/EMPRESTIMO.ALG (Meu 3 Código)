@@ -1,0 +1,15 @@
+Algoritmo "EMPRESTIMO"
+var
+emprestimo, n_de_parcelas: inteiro
+valor_parcela,total: real
+Inicio
+Escreva ("Qual é o valor do emprestimo? R$")
+leia (emprestimo)
+total<-(emprestimo*20/100)+emprestimo
+Escreval("O total do emprestimo é ", total, " reais com juros")
+Escreval("")
+Escreval("Quer dividir o pagamento em quantas vezes?")
+leia (n_de_parcelas)
+valor_parcela<-total/n_de_parcelas
+Escreval ("Cada mes por ",n_de_parcelas," meses, você pagará ", valor_parcela, " reais na parcela")
+Fimalgoritmo
