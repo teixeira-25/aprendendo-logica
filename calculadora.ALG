@@ -1,19 +1,21 @@
-Algoritmo "Calculadora"
-Var
-    N1, N2, S :inteiro
-    Nome: caractere
-Inicio
+algoritmo "Calculadora"
+var
+    n1: inteiro
+    n2: inteiro
+    s: inteiro
+    nome: caractere
+inicio
     escreval("Bom Dia")
     escreva("Qual é o seu nome?")
-    leia(Nome)
-    escreval("Muito Prazer ",Nome)
-    escreva(Nome," diga-me um número: ")
-    leia(N1)
-    escreva(Nome," diga-me outro número: ")
-    leia(N2)
-    S <- N1 + N2
-    escreva("A soma de ", N1 ," + ", N2 )
-    escreval(S)
+    leia(nome)
+    escreval("Muito Prazer ", nome)
+    escreva(nome, " diga-me um número: ")
+    leia(n1)
+    escreva(nome, " diga-me outro número: ")
+    leia(n2)
+    s <- n1 + n2    escreva("A soma de ", n1, " + ", n2)
+    escreval(s)
     escreva("Obrigado por participar ")
-    escreva(Nome)
+    escreva(nome)
+
 fimalgoritmo
