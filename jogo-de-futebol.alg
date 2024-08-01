@@ -1,9 +1,9 @@
 algoritmo "Jogo de Futebol"
 
 var
-    corint : real
-    palmei : real
-    diferenca : real
+    corint : inteiro
+    palmei : inteiro
+    diferenca : inteiro
 inicio
     escreval("Jogo Corinthians x Palmeiras")
     escreval(" ")
@@ -12,17 +12,15 @@ inicio
     escreva("Quantos gols do Palmeiras ? ")
     leia(palmei)
     escreval(" ")
-    diferenca<-(corint-palmei)
-    escreval("Diferença :" , diferenca)
-    se (diferenca<=3) entao 
+    diferenca<-abs(corint-palmei)
+    escreval("Diferença :",diferenca)
+    se(diferenca>=1)e(diferenca<=3)entao 
         escreval("STATUS: Jogo Normal")
-        senao
-            se (diferenca<3) entao
-                escreval("STATUS: Goleada")
-                senao
-                    se (diferenca=0)  entao
-                        escreval("STATUS: Empate")
-                    fimse
-            fimse
+            senao
+                se(diferenca=0)entao
+                    escreval("STATUS: Empate")               
+                        senao
+                            escreva("STATUS: Goleada")      
+                fimse
     fimse
     fimalgoritmo
