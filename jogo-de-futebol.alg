@@ -12,7 +12,8 @@ inicio
     escreva("Quantos gols do Palmeiras ? ")
     leia(palmei)
     escreval(" ")
-    diferenca<-(corint-palmei)
+    diferenca<-abs
+    (corint-palmei)
     escreval("Diferença :",diferenca)
     se(diferenca>=1)e(diferenca<=3)entao 
         escreval("STATUS: Jogo Normal")
