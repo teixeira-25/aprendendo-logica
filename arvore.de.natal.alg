@@ -8,12 +8,11 @@ inicio
     altura<-10
     indexAltura<-0
     largura<-0
-    escreval("*")
+    // escreval("*")
     //Linhas(cada volta uma linha)
     enquanto (altura>indexAltura) faca
-         indexAltura<-indexAltura+1
         //isso ta fazendo a primeira folha
-        escreva("*")
+        // escreva("*")
         //isso ta fazendo as folhas do resto da linha
         indexlargura<-0
         enquanto (largura>indexLargura-indexAltura) faca
@@ -21,5 +20,6 @@ inicio
             indexLargura<-indexLargura+1
         fimenquanto
         escreval("")
+        indexAltura<-indexAltura+1
     fimenquanto
 fimalgoritmo    
