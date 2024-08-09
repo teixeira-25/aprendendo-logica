@@ -2,23 +2,19 @@ algoritmo "Seletor"
 
 var
     sexo:caractere
+    idad:inteiro
     masc:inteiro
     femi:inteiro
-    idad:inteiro
     d:inteiro
-    cast:inteiro
-    loi:inteiro
     resp:caractere
-    pret:inteiro
-    ruiv:inteiro
-    cabelo:caractere
+    cabelo:inteiro
+    homens:inteiro
+    mulhe:inteiro
 inicio
     masc<-0
     femi<-0
-    cast<-0
-    loi<-0
-    pret<-0
-    ruiv<-0
+    homens<-0
+    mulhe<-0
     repita
         escreval("==================")
         escreval("Seletor de pessoas")
@@ -54,23 +50,21 @@ inicio
         leia(d)
         escolha(d)
             caso 1
-                cabelo<-"preto"
+                cabelo<-1
             caso 2
-                cabelo<-"castanho"
+                cabelo<-2
             caso 3
-                cabelo<-"loiro"
+                cabelo<-3
             caso 4
-                cabelo<-"ruivo"
+                cabelo<-4
         fimescolha
-        se ((sexo="m") e (idade<18) e (cabelo="castanho")) entao
-            escreval("ESSE CONTA")
+        se(sexo="m") e (idad<18) e (cabelo=2)entao
+            homens<-homens+1 
+            senao
+            se(sexo="f") e (idad>=25) e (idad>=30) e (cabelo=3)entao
+            mulhe<-mulhe+1
+            fimse
         fimse
-    ate (resp="n")
-    escreval("Se contabilizou ", masc , " homem(s) e " , femi , " mulher(s) " , pret , "com cabelo preto " , cast , " com cabelo catanho e ", loi , " com cabelo loiro")
-fimalgoritmo
-
-
-
         repita
             escreva("você quer continuar? [S/N] ")
             leia (resp)
@@ -78,3 +72,10 @@ fimalgoritmo
                 escreval("Digite [S/N] como resposta, tente de novo")
             fimse
         ate (resp="n") ou (resp="s")
+    ate (resp="n")
+    escreval("==================")
+    escreval(" RESULTADO FINAL")
+    escreval("==================")
+    escreval("O Total de homens com mais de 18 anos e cabelos castanhos é: " , homens)
+    escreva("O Total de mulheres entre 25 e 30 anos e loiras é: " , mulhe)
+fimalgoritmo
