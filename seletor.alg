@@ -58,12 +58,11 @@ inicio
             caso 4
                 cabelo<-4
         fimescolha
-        se(sexo="m") e (idad<18) e (cabelo=2)entao
+        se(sexo="m") e (idad>18) e (cabelo=2)entao
             homens<-homens+1 
-            senao
-            se(sexo="f") e (idad>=25) e (idad>=30) e (cabelo=3)entao
+        fimse
+        se(sexo="f") e (idad>=25) e (idad<=30) e (cabelo=3)entao
             mulhe<-mulhe+1
-            fimse
         fimse
         repita
             escreva("você quer continuar? [S/N] ")
@@ -73,6 +72,7 @@ inicio
             fimse
         ate (resp="n") ou (resp="s")
     ate (resp="n")
+    limpatela
     escreval("==================")
     escreval(" RESULTADO FINAL")
     escreval("==================")
