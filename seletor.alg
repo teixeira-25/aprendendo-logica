@@ -10,15 +10,20 @@ var
     cabelo:inteiro
     homens:inteiro
     mulhe:inteiro
+    procedimento topo ()
+    inicio
+    escreval("==================")
+    escreval("Seletor de pessoas")
+    escreval("==================")
+    fimprocedimento
 inicio
     masc<-0
     femi<-0
     homens<-0
     mulhe<-0
     repita
-        escreval("==================")
-        escreval("Seletor de pessoas")
-        escreval("==================")
+        limpatela
+        topo ()
         escreval("")
         repita
             escreva("Qual o sexo? [M/F] ")
@@ -31,9 +36,7 @@ inicio
                 senao
                     se (sexo<>"m") ou (sexo<>"f") entao
                         limpatela
-                        escreval("==================")
-                        escreval("Seletor de pessoas")
-                        escreval("==================")
+                        topo ()
                         escreval("Digite uma opção válida!")
                     fimse
                 fimse
