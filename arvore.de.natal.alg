@@ -1,30 +1,29 @@
-algoritmo "arvore de natal"
+algoritmo "Nome do Programa"
+
 var
-    altura:inteiro
-    indexAltura:inteiro
-    largura:inteiro
-    indexLargura:inteiro
-procedimento repitaconteudo(var texto:caracter, quantidade:inteiro)
-var
-    i:inteiro
+    tamanho:inteiro
+    c:inteiro
+    index:inteiro
+    indexfolha:inteiro
+    indexfolhaesquerda:inteiro
 inicio
-    i<-0
-    enquanto (i<quantidade) faca
+    indexfolha<-0
+    para c<-0 ate 10 faca
+        para index<-0 ate 10-indexfolha faca
+            escreva(" ")
+        fimpara
+        se (indexfolha=0) entao
         escreva("*")
-        i<-i+1
-    fimenquanto
-fimprocedimento
-inicio
-    altura<-10
-    indexAltura<-0
-    largura<-0
-    // escreval("*")
-    //Linhas(cada volta uma linha)
-    enquanto (altura>indexAltura) faca
-        //isso ta fazendo a primeira folha
-        // escreva("*")
-        //isso ta fazendo as folhas do resto da linha
+        senao
+        para indexfolha<-1 ate indexfolha faca
+            escreva("*")
+        fimpara
+        para indexfolhaesquerda<-1 ate indexfolha faca
+            escreva("*")
+        fimpara
+        escreva("*")
+        fimse
+        indexfolha<-indexfolha+1
         escreval("")
-        indexAltura<-indexAltura+1
-    fimenquanto
-fimalgoritmo    
+    fimpara
+fimalgoritmo
