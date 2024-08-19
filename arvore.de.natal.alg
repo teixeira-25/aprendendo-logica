@@ -40,7 +40,7 @@ inicio
               escreva(" ")
         fimpara
         para indextronco<-0 ate ((2*(tamanho+1))\3)faca
-             escreva("I")
+             escreva("|")
         fimpara
         escreval("")
     fimpara
