@@ -1,7 +1,7 @@
 algoritmo "Nome do Programa"
 
 var
-    tamanho:inteiro
+    altura:inteiro
     c:inteiro
     index:inteiro
     indexfolha:inteiro
@@ -14,11 +14,11 @@ inicio
     escreval(" Projeto Arvore de Natal ")
     escreval("-------------------------")
     escreval("")
-    escreva("Qual o tamanho da Arvore? ")
-    leia (tamanho)
+    escreva("Qual a altura da Arvore? ")
+    leia (altura)
     indexfolha<-0
-    para c<-0 ate tamanho faca
-        para index<-0 ate tamanho-indexfolha faca
+    para c<-0 ate altura faca
+        para index<-0 ate altura-indexfolha faca
             escreva(" ")
         fimpara
         se (indexfolha=0) entao
@@ -35,11 +35,11 @@ inicio
         indexfolha<-indexfolha+1
         escreval("")
     fimpara
-    para indextroncoadicional<-0 ate ((2*(tamanho+1))\8) faca
-        para indexespaco<-0 ate (2*(tamanho+1))\3 faca
+    para indextroncoadicional<-0 ate ((2*(altura+1))\8) faca
+        para indexespaco<-0 ate (altura-(altura\4)) faca
               escreva(" ")
         fimpara
-        para indextronco<-0 ate ((2*(tamanho+1))\3)faca
+        para indextronco<-0 ate altura\4 faca
              escreva("|")
         fimpara
         escreval("")
